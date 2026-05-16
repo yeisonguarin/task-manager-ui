@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Tarea - Task Manager</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Nueva Tarea</h1>
+            <p>Completa los campos para agregar una tarea</p>
+
+            <form id="taskForm">
+                <div class="input-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ej: Diseñar base de datos" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="Describe la tarea en detalle..." required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="pendiente">Pendiente</option>
+                        <option value="progreso">En progreso</option>
+                        <option value="completada">Completada</option>
+                        <option value="revision">En revisión</option>
+                    </select>
+                </div>
+
+                <div class="botones">
+                    <button type="submit" class="btn-guardar">Guardar Tarea</button>
+                    <a href="dashboard.html"><button type="button" class="btn-cancelar">Cancelar</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

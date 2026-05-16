@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Task  - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-logo">Task</div>
+    <ul class="nav-links">
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="tarea.html">Detalle de Tarea</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="index.html">Salir</a></li>
+    </ul>
+</nav>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>📋 Mis Tareas</h1>
+            <p>Gestiona tus actividades pendientes</p>
+        </header>
+
+        <div class="tasks-grid">
+            <!-- Tarjeta 1 -->
+            <div class="task-card">
+                <h3 class="task-title">Diseñar base de datos</h3>
+                <p class="task-description">Crear el modelo entidad-relación para el sistema de transporte de piña.</p>
+                <span class="task-status status-pending">Pendiente</span>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="task-card">
+                <h3 class="task-title">Desarrollar backend</h3>
+                <p class="task-description">Implementar API REST con Java Spring Boot.</p>
+                <span class="task-status status-progress">En progreso</span>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="task-card">
+                <h3 class="task-title">Crear interfaz de usuario</h3>
+                <p class="task-description">Maquetar el dashboard con HTML y CSS responsive.</p>
+                <span class="task-status status-done">Completada</span>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="task-card">
+                <h3 class="task-title">Pruebas del sistema</h3>
+                <p class="task-description">Validar que todas las funcionalidades operen correctamente.</p>
+                <span class="task-status status-review">En revisión</span>
+            </div>
+
+            <!-- Tarjeta 5 (extra para cumplir mínimo 4) -->
+            <div class="task-card">
+                <h3 class="task-title">Documentación del proyecto</h3>
+                <p class="task-description">Redactar manual de usuario y técnico.</p>
+                <span class="task-status status-pending">Pendiente</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
