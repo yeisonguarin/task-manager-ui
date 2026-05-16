@@ -1,0 +1,113 @@
+:root {
+    --primary: #4a90e2;
+    --bg: #f4f6f8;
+    --text: #333;
+    --white: #ffffff;
+}
+.detalle-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    padding: 20px;
+}
+
+.detalle-card {
+    background: var(--white);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-card h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.detalle-campo {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.detalle-campo label {
+    display: block;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.detalle-campo p {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.detalle-botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-editar {
+    flex: 1;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-volver {
+    flex: 1;
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.estado-pendiente {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.estado-progreso {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.estado-completada {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.estado-revision {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .detalle-card {
+        padding: 20px;
+    }
+    
+    .detalle-botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
