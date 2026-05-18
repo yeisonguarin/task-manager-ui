@@ -62,19 +62,6 @@ body {
 .login-box button:hover {
   background: #357ac9;
 }
-<<<<<<< Updated upstream
-
-.btn {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 15px;
-  background: var(--primary);
-  color: white;
-  padding: 10px 20px ;
-  text-decoration: none;
-  border-radius: 8px;
-=======
 .btn{
   display: block; 
   width: 100%;
@@ -86,5 +73,4 @@ body {
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
->>>>>>> Stashed changes
 }
